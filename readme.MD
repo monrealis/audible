@@ -6,5 +6,5 @@ Instructions:
 * `prepare.sh`
 * `docker-compose build --no-cache`
 * `docker-compose up`
-* Login to `localhost:5432` (`postgres`/``)
+* Login to `localhost:5432` (`postgres`/ empty password)
 * Query `select * from books`
