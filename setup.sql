@@ -4,8 +4,7 @@ create table files
     json jsonb
 );
 
-insert into files (json)
-select pg_read_file('/docker-entrypoint-initdb.d/books.json') ::jsonb;
+--insert into files (json) select pg_read_file('/docker-entrypoint-initdb.d/books.json') ::jsonb;
 
 create table items                              as
 select substring(b->>'genre', '.*(?=:)')        genre1,
